@@ -1,4 +1,4 @@
-# What-CNN-s-See
+# What-CNNs-See
 Filter Visualizations and Heatmaps
 
 # Activation Visualization (activation_maximization.py)
