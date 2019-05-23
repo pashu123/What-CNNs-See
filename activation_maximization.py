@@ -8,7 +8,7 @@ from keras import backend as K
 
 ## Load the model the see the activation map
 model = load_model('mnistcnn.h5')
-
+print('hello')
 
 # visualize the dense layer
 from vis.visualization import visualize_activation
@@ -30,3 +30,8 @@ model = utils.apply_modifications(model)
 filter_idx = 0
 img = visualize_activation(model, layer_idx, filter_indices=filter_idx)
 plt.imshow(img[..., 0])
+plt.savefig('foo.png')
+
+img = visualize_activation(model, layer_idx, filter_indices=filter_idx, input_range=(0., 1.), verbose=True)
+plt.imshow(img[..., 0])
+plt.savefig('second.png')
