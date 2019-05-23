@@ -1,7 +1,7 @@
 # What-CNN-s-See
 Filter Visualizations, Heatmaps and Salience Maps
 
-# Activation Visualization
+# Activation Visualization (activation_maximization.py)
 Activation visualization show how successive convolution layers transform their input. <br>
 <br>
 We do this by visualizing intermediate activations, which display the feature maps that are 
@@ -18,3 +18,15 @@ and using that estimate to update the input.<br>
 Activation Maximization loss simply outputs small values for large filter activations{we are minimizing losses during gradient descent iterations}. This allows us to understand what sort of input patterns activate a particular filter.
 <br><br>
 The best way to conceptualize what your cnn perceives is to visualize the Dense Layer Visualizations.
+
+
+![15](https://user-images.githubusercontent.com/16246821/58276621-870f7300-7db5-11e9-86eb-23e346464585.png)
+![21](https://user-images.githubusercontent.com/16246821/58276635-91317180-7db5-11e9-8815-8de4429c14ca.png)
+![1](https://user-images.githubusercontent.com/16246821/58276588-77902a00-7db5-11e9-9486-604b2a6305dd.png)
+![2](https://user-images.githubusercontent.com/16246821/58276593-79f28400-7db5-11e9-9dec-0aed7820e18a.png)
+![3](https://user-images.githubusercontent.com/16246821/58276597-7c54de00-7db5-11e9-8950-d656d0c3fec9.png)
+
+
+<p align="center">
+  <h3>These were the activation map of some letters, while training Handwritten Alphabets </h3>
+</p>
