@@ -1,5 +1,5 @@
 # What-CNN-s-See
-Filter Visualizations, Heatmaps and Salience Maps
+Filter Visualizations and Heatmaps
 
 # Activation Visualization (activation_maximization.py)
 Activation visualization show how successive convolution layers transform their input. <br>
