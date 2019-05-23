@@ -32,10 +32,13 @@ img = visualize_activation(model, layer_idx, filter_indices=filter_idx)
 plt.imshow(img[..., 0])
 plt.savefig('foo.png')
 
+import string
+
+s = string.ascii_uppercase
 
 for output_idx in np.arange(26):
     img = visualize_activation(model, layer_idx, filter_indices=output_idx, input_range=(0., 1.))
     plt.figure()
-    plt.title('Networks perception of {}'.format(output_idx))
+    plt.title(f'Networks perception of {s[output_idx]}')
     plt.imshow(img[..., 0])
     plt.savefig(f'{output_idx}.png')
